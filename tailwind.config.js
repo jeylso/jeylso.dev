@@ -35,13 +35,15 @@ module.exports = {
         ".lines-bottom": {
           border: "0.125rem black solid",
           borderStyle: "none solid solid",
-          // height: "1.25rem",
         },
         ".vl": {
           borderLeft: "0.125rem solid black",
           position: "absolute",
           height: "0.625rem",
           left: "50%",
+        },
+        ".text-shadow": {
+          textShadow: "3px 3px 4px grey",
         },
       };
       addComponents(customClass);
