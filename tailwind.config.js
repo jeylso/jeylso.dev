@@ -6,7 +6,11 @@ module.exports = {
   theme: {
     extend: {
       spacing: {
-        42: "10.313rem",
+        42: "10.5rem",
+        30: "7.5rem",
+      },
+      inset: {
+        "-8.1": "-2.1rem",
       },
     },
   },
