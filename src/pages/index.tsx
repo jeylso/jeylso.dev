@@ -1,19 +1,13 @@
-import { HeaderMe, HeaderWebSite } from "../components/headerContent";
-import { FooterSocialMedia, FooterEmail } from "../components/footerContent";
+import Lines from "../components/lines";
 
 export default function HomePage() {
   return (
-    <div className="grid grid-flow-col auto-cols-max gap-x-11 no-select">
-      {/* lines top */}
-      <HeaderMe />
-      <HeaderWebSite />
-      {/* email */}
-      <h1 className="col-span-2 row-start-2 text-5xl font-light tracking-wider">
-        joseluis@jeylso.dev
-      </h1>
-      {/* lines bottom */}
-      <FooterEmail />
-      <FooterSocialMedia />
+    <div className="grid grid-flow-col auto-cols-max no-select">
+      <Lines>
+        <h1 className="col-span-2 row-start-2 text-4xl md:text-5xl font-light tracking-wider">
+          joseluis@jeylso.dev
+        </h1>
+      </Lines>
     </div>
   );
 }
