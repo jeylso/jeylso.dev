@@ -1,4 +1,4 @@
-import Lines from "../components/lines";
+import Lines from "@components/lines";
 
 export default function HomePage() {
   return (
