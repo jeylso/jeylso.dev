@@ -7,8 +7,14 @@ module.exports = {
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
+    backgroundColor: (theme) => ({
+      ...theme("colors"),
+      twitter: "rgb(29, 161, 242)",
+      facebook: "rgb(66, 103, 178)",
+    }),
     extend: {
       spacing: {
+        "-1.3": "-0.2rem",
         42: "10.5rem",
         30: "7.5rem",
       },

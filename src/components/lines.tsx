@@ -1,11 +1,9 @@
 import Link from "next/link";
-import { Fragment, ReactNode } from "react";
+import { Fragment } from "react";
+import { Children } from "@types";
+import PopupSocial from "../libs/popup-social";
 
-type Props = {
-  children: ReactNode;
-};
-
-export default function LinesLayout({ children }: Props) {
+export default function LinesLayout({ children }: Children) {
   return (
     <Fragment>
       {/* lines top */}
@@ -36,11 +34,12 @@ export default function LinesLayout({ children }: Props) {
       <div className="col-start-2 row-start-3 relative w-32 md:w-42 -left-8.1 md:-left-11 mt-3 z-10 text-center md:top-1">
         <div className="lines-bottom h-5"></div>
         <div className="vl"></div>
-        <Link href="/social">
-          <a className="text-xl md:text-2xl font-light tracking-wider">
-            social media
-          </a>
-        </Link>
+        <button
+          className="text-xl md:text-2xl font-light tracking-wider focus:outline-none"
+          onClick={PopupSocial}
+        >
+          social media
+        </button>
       </div>
     </Fragment>
   );
