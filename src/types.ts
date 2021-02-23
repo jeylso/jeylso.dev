@@ -10,7 +10,5 @@ export type LinkSocials = {
 
 export type Layouts = {
     children: ReactNode;
-    pageTitle?: string;
-    pageDescription?: string;
-    contentClass?: string | null;
+    className?: string | null;
 }
