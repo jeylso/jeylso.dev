@@ -1,9 +1,9 @@
 import Link from "next/link";
 import { Fragment } from "react";
-import { Children } from "@types";
-import PopupSocial from "../libs/popup-social";
+import { LinesLayouts } from "@types";
+import PopupSocial from "@libs/popup-social";
 
-export default function LinesLayout({ children }: Children) {
+export default function LinesLayout({ children }: LinesLayouts) {
   return (
     <Fragment>
       {/* lines top */}
