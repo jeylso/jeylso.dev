@@ -15,12 +15,10 @@ class JeylsoDocument extends Document {
 
   render() {
     return (
-      <Html>
+      <Html lang="en">
         <Head />
         <body>
-          <main className="flex h-screen items-center justify-center">
-            <Main />
-          </main>
+          <Main />
           <NextScript />
         </body>
       </Html>

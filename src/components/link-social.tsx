@@ -7,6 +7,7 @@ const socials = {
     color: "bg-facebook",
     url: "https://facebook.com",
     class: "row-start-1 col-span-2 md:col-span-1",
+    accessKey: "f",
   },
   twitter: {
     name: "twitter",
@@ -14,12 +15,14 @@ const socials = {
     url: "https://twitter.com",
     class:
       "col-start-1 md:col-start-2 row-start-2 col-span-2 md:row-start-1 md:col-span-1",
+    accessKey: "t",
   },
   github: {
     name: "github",
     color: "bg-black",
     url: "https://github.com",
     class: "col-span-2 row-start-3 md:row-start-2",
+    accessKey: "g",
   },
 };
 
@@ -27,9 +30,11 @@ export default function LinkSocial({ social }: LinkSocials) {
   const username = "jeylso";
   return (
     <a
-      href={`${socials[social].url}/${username}`}
+      key={socials[social].name}
       target="_blank"
       rel="noopener noreferrer"
+      accessKey={socials[social].accessKey}
+      href={`${socials[social].url}/${username}`}
       className={`flex items-center justify-center outline-none ${socials[social].class}`}
     >
       <div className="flex shadow-lg rounded-full bg-gray-300 w-48">
