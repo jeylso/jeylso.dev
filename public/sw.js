@@ -1,17 +1,5 @@
-const version = "0.0.1";
-const CACHE_NAME = `jeylso-${version}`;
-const urlsToCache = [
-  "/404.html",
-  "/about.html",
-  "/email.html",
-  "/index.html",
-  "/manifest.json",
-  "/portada.jpg",
-  "/favicon.ico",
-  "/favicons/**",
-  "/_next",
-  "/sw.js",
-];
+const CACHE_NAME = "jeylso.dev";
+const urlsToCache = ["/"];
 
 self.addEventListener("install", (event) => {
   const preLoaded = caches
