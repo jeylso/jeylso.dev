@@ -4,3 +4,4 @@
 - 🚧 Built using [Nextjs](https://nextjs.org)
 - 💅 Styles with [Tailwind](https://tailwindcss.com)
 - 🚀 Deployed with [Vercel](https://vercel.com/)
+- 📊 Web Analytics with [counter](https://counter.dev/)
