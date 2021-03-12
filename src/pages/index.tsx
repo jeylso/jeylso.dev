@@ -1,16 +1,21 @@
-import Lines from "@components/lines";
 import Layout from "@components/layout";
+import LinesContainer from "@components/lines-container";
 
-export default function HomePage() {
+export default function HomePage({ email }) {
   return (
     <Layout className="flex h-screen items-center justify-center">
       <div className="grid grid-flow-col auto-cols-max no-select">
-        <Lines>
+        <LinesContainer email={email}>
           <h1 className="col-span-2 row-start-2 text-4xl md:text-5xl font-light tracking-wider">
-            joseluis@jeylso.dev
+            {email}
           </h1>
-        </Lines>
+        </LinesContainer>
       </div>
     </Layout>
   );
+}
+
+export function getStaticProps() {
+  const email = process.env.EMAIL;
+  return { props: { email } };
 }
